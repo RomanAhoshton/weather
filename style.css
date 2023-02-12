@@ -10,7 +10,8 @@ body{
     width: 100%;
     height: 100%;
     list-style: none;
-    padding-top: 20px;
+    align-items:center;
+    justify-content: center;
     background-color: rgb(17, 44, 93);
   
 
@@ -18,16 +19,24 @@ body{
 
 
 .container{
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .container_weather{
-    min-width: 300px;
-    /* border: 1px solid black; */
-    min-height: 350px;
+    min-width: 350px; 
+    max-width: 400px;
+   
+    min-height: 800px;
     max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+  
 
    
 }
@@ -43,15 +52,29 @@ body{
 .select,.bg-grey,.temperature, .features,
 .description,.direction_of_the_wind,.wind_speed,
 .pressure,.clear  {
-    margin-bottom: 20px;
+    margin-top: 40px;
     color:white;
     font-weight: 600;
-    
+    font-size: 35px;
+}
+
+@media (max-width:393px) {
+    .select,.bg-grey,.temperature, .features,
+.description,.direction_of_the_wind,.wind_speed,
+.pressure,.clear {
+    font-size: 30px;
+
+}
     
 }
 
+
+
+
+
+
 select{
-    font-size: 16px;
+    font-size: 25px;
     color:white;
     outline: none;
     border:none;
